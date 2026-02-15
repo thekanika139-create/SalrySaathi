@@ -13,31 +13,30 @@ Batch Operations: Efficient management of multiple employee streams in a single 
 Emergency Stop: A contract-wide circuit breaker to freeze operations during security events or network maintenance.  
 On/Off Ramp: wap HLUSD to flat via third party provider
 
-# Quick Start
-### 1. Prerequisites
-* **Node.js (v18+) & npm**
-* **MetaMask wallet** configured for HeLa Testnet
-* **HLUSD Tokens**: Ensure you have testnet HLUSD for gas and streaming
-```text
-2. Installation
-   write this code in your terminal
-   **#Clone the repository**
-   git clone https://github.com/your-username/PayStream.git
-   cd PayStream
-   #Install dependencies
-   npm install
+## Quick Start
 
- 3. Environment Configuration
-    Create a `.env` file in the root directory:
-    PRIVATE_KEY=your_private_key
-    HELA_RPC_URL=[https://testnet-rpc.helalabs.com](https://testnet-rpc.helalabs.com)
-    HLUSD_ADDRESS=0x... # HeLa HLUSD Token Address
-   TAX_VAULT=0x... # Address to receive automated tax deductions
+### Prerequisites
+- Node.js (>=18)
+- npm 
+- Hardhat (for smart contract development)
+- MetaMask wallet (for testing frontend)
 
-4. Deployment & Launch
-   #Deploy Smart Contract
-   npx hardhat run scripts/deploy.js --network hela_testnet
-   #Start Frontend
-   cd client && npm run dev
+###Install dependencies:
+ - npm install
+###Compile and test contracts:
+ - cd contracts
+ -npx hardhat compile
+ -npx hardhat test
+### Run backend:
+- Run backend:
+cd backend
+npm run dev
+###Run frontend:
+  cd frontend
+  npm run dev
 
- 
+
+- Open http://localhost:3000 (localhost in Bing) in your browser.
+
+
+
