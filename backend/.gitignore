@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Environment variables (secrets)
+.env
+.env.local
+.env.development
+.env.production
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Prisma generated files (optional but recommended)
+prisma/migrations/
+
+# TypeScript cache
+*.tsbuildinfo
